@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Car on Canvas</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* Sky */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="carCanvas" width="600" height="400"></canvas>
+
+    <script>
+        // Get the canvas and context
+        const canvas = document.getElementById('carCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Function to draw the car body
+        function drawCarBody() {
+            ctx.fillStyle = 'red'; // Car body color
+            ctx.fillRect(100, 200, 300, 75); // Main car body (rectangle)
+
+            ctx.fillStyle = 'red';
+            ctx.fillRect(150, 150, 200, 50); // Upper car body
+        }
+
+        // Function to draw car windows
+        function drawCarWindows() {
+            ctx.fillStyle = 'lightblue'; // Window color
+            ctx.fillRect(160, 160, 60, 40); // Left window
+            ctx.fillRect(230, 160, 60, 40); // Right window
+        }
+
+        // Function to draw the car wheels
+        function drawCarWheels() {
+            ctx.fillStyle = 'black'; // Wheel color
+            ctx.beginPath();
+            ctx.arc(150, 300, 30, 0, Math.PI * 2); // Left wheel
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(350, 300, 30, 0, Math.PI * 2); // Right wheel
+            ctx.fill();
+        }
+
+        // Function to draw the car
+        function drawCar() {
+            drawCarBody();   // Car body
+            drawCarWindows(); // Car windows
+            drawCarWheels();  // Car wheels
+        }
+
+        // Call the function to draw the car
+        drawCar();
+    </script>
+</body>
+
+</html>

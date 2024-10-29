@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree on Canvas</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* Sky */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="treeCanvas" width="500" height="500"></canvas>
+
+    <script>
+        // Get the canvas element and its context
+        const canvas = document.getElementById('treeCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Function to draw the trunk of the tree
+        function drawTrunk() {
+            ctx.fillStyle = '#8B4513'; // Trunk color
+            ctx.fillRect(225, 300, 50, 150); // Position and size of the trunk
+        }
+
+        // Function to draw the leaves (circle-like tree top)
+        function drawLeaves() {
+            ctx.fillStyle = 'green'; // Leaves color
+            ctx.beginPath();
+            ctx.arc(250, 250, 100, 0, Math.PI * 2); // Circular tree top
+            ctx.fill();
+        }
+
+        // Function to draw the tree
+        function drawTree() {
+            drawTrunk();
+            drawLeaves();
+        }
+
+        // Call the function to draw the tree
+        drawTree();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General styles */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header section styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for navigation links */
+        .nav-links {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* Image styling for the top-right */
+        .logo img {
+            width: 100px;
+            /* Adjust size as necessary */
+        }
+
+        /* Centered form box */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300%;
+            padding-top: 0%;
+            background-color: rgb(2, 94, 94);
+            /* Adjust for header height */
+        }
+
+        .form-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #080000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #8fddf5;
+            text-align: center;
+        }
+
+        /* Input field styling */
+        .form-box input[type="text"],
+        .form-box input[type="number"],
+        .form-box input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Styling the form button */
+        .form-box button {
+            width: 100%;
+
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+
+        <!-- Logo or image on the right -->
+        <div class="logo">
+            <img src="sacco logo.jfif" alt="Logo"> <!-- Replace 'your-logo.png' with your image file -->
+            <p style="color: #080000; font-size: larger; font-weight: bolder;font-size: 30px;">
+                "The Home OF Your Finances"
+            </p>
+        </div>
+        <!-- Navigation links on the left -->
+
+        <pre style="color: #080000; font-size: larger; font-weight: bolder;font-size: 30px;">
+            EAZISEV SACCO
+</pre>
+    </header>
+    <header>
+        <div class="nav-links">
+
+            <a href="signUp.html">SignUp</a>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+
+    <!-- Form centered in the page -->
+    <div class="form-container">
+
+
+        <div class="form-box">
+            <p>CREATE ACCOUNT</p>
+
+            <form>
+                Name: <input type="text"><br><br>
+                Phone Number:<input type="number"><br><br>
+                Gender:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                District: <input type="text"><br><br>
+                Marital Status:
+                <input type="radio" id="Married" name="Marital Status" value="Married">
+                <label for="Married">Married</label>
+
+                <input type="radio" id="Single" name="Marital Status" value="Single">
+                <label for="Single">Single</label><br><br>
+
+                NIN: <input type="text"><br><br>
+                Parish: <input type="text"><br><br>
+                Village: <input type="text"><br><br>
+                Occupation: <input type="text"><br><br>
+                Date of Birth: <input type="date"><br><br>
+                Next of Kin: <input type="text"><br><br>
+                Relationship of NOK: <input type="text"><br><br>
+                Address of NOK: <input type="text"><br><br>
+
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

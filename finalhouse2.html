@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene with House, Tree, Car, and Sun</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* Sky */
+        }
+
+        /* Ground */
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background-color: green;
+        }
+
+        /* Sun */
+        .sun {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        /* House */
+        .house {
+            position: absolute;
+            bottom: 150px;
+            left: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: #ffcc99;
+            border: 2px solid #b5651d;
+        }
+
+        .roof {
+            position: absolute;
+            bottom: 350px;
+            left: 150px;
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        /* Tree */
+        .tree {
+            position: absolute;
+            bottom: 150px;
+            left: 450px;
+        }
+
+        .tree-trunk {
+            width: 30px;
+            height: 100px;
+            background-color: #8B4513;
+        }
+
+        .tree-leaves {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            top: -60px;
+            left: -35px;
+        }
+
+        /* Car */
+        .car {
+            position: absolute;
+            bottom: 100px;
+            right: 200px;
+            width: 120px;
+            height: 60px;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        .wheel {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -15px;
+        }
+
+        .wheel.left {
+            left: 10px;
+        }
+
+        .wheel.right {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sun -->
+    <div class="sun"></div>
+
+    <!-- House -->
+    <div class="house"></div>
+    <div class="roof"></div>
+
+    <!-- Tree -->
+    <div class="tree">
+        <div class="tree-trunk"></div>
+        <div class="tree-leaves"></div>
+    </div>
+
+    <!-- Car -->
+    <div class="car">
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+
+    <!-- Ground -->
+    <div class="ground"></div>
+
+</body>
+
+</html>
